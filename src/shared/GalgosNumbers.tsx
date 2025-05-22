@@ -1,0 +1,47 @@
+import firstPlaceIcon from "../assets/img/first-place-icon.png";
+import secondPlaceIcon from "../assets/img/second-place-icon.png";
+import thirdPlaceIcon from "../assets/img/third-place-icon.png";
+
+const galgoColor = [
+  "galgo-1",
+  "galgo-2",
+  "galgo-3",
+  "galgo-4",
+  "galgo-5",
+  "number-galgo-6",
+];
+
+type Props = {
+  galgoNumber: number;
+  className?: string;
+  firstPlace?: boolean;
+  secondPlace?: boolean;
+  thirdPlace?: boolean;
+};
+
+export const GalgosNumbers = ({
+  galgoNumber,
+  className,
+  firstPlace,
+  secondPlace,
+  thirdPlace,
+}: Props) => {
+  return (
+    <div
+      className={`${
+        galgoColor[galgoNumber - 1]
+      } relative flex justify-center items-center rounded text-black font-bold text-center ${className}`}
+    >
+      {firstPlace && (
+        <img className="absolute -top-5 -left-5" src={firstPlaceIcon} />
+      )}
+      {secondPlace && (
+        <img className="absolute -top-5 -left-5" src={secondPlaceIcon} />
+      )}
+      {thirdPlace && (
+        <img className="absolute -top-5 -left-5" src={thirdPlaceIcon} />
+      )}
+      <p>{String(galgoNumber)}</p>
+    </div>
+  );
+};
