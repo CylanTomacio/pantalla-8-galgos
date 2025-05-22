@@ -61,7 +61,7 @@ const dogsData = [
 
 export const BetTable = () => {
   return (
-    <div className="relative w-full h-full row-span-9 col-span-4 bg-[#5D87A2] rounded-tl-[4rem] rounded-br-[4rem] shadow-table-components px-8 py-2 z-20">
+    <div className="relative w-full h-full row-span-9 col-span-4 bg-[#5D87A2] rounded-tl-8xl rounded-br-8xl shadow-table-components px-8 py-2 z-20">
       <table className="w-full h-full text-white table-auto border-separate border-spacing-y-1 text-center z-50">
         <thead className="text-4xl">
           <tr>

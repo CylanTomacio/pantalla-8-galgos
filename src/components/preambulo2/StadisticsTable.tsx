@@ -22,8 +22,8 @@ export const StadisticsTable = () => {
     .slice(0, 3);
 
   return (
-    <div className="relative w-full h-full row-span-9 col-span-4 bg-[#5D87A2] rounded-br-4xl rounded-tl-4xl shadow-table-components px-8 py-4">
-      <div className="relative w-full h-full ps-10 pt-10 bg-[#0F3762] rounded-br-4xl rounded-tl-4xl">
+    <div className="relative w-full h-full row-span-9 col-span-4 bg-[#5D87A2] rounded-br-8xl rounded-tl-8xl shadow-table-components px-8 py-4">
+      <div className="relative w-full h-full ps-10 pt-10 bg-[#0F3762] rounded-br-8xl rounded-tl-8xl">
         <div className="absolute top-[2rem] left-[4rem]">
           <p className="text-white text-sm leading-1.5 uppercase italic">2do</p>
           <img width={40} src={arrowIcon} alt="Flecha" />
