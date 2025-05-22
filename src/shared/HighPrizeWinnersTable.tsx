@@ -1,4 +1,4 @@
-import { ColoredTitle } from "../../shared";
+import { ColoredTitle } from ".";
 
 const winnersData = [
   {
@@ -23,7 +23,7 @@ const winnersData = [
 
 export const HighPrizeWinnersTable = () => {
   return (
-    <div className="relative w-full h-full row-span-2 col-span-4 bg-[#5D87A2] rounded-tr-6xl shadow-table-components px-4 pt-4 pb-2">
+    <div className="relative w-full h-full row-span-3 col-span-4 bg-[#5D87A2] rounded-tr-6xl shadow-table-components px-4 pt-4 pb-2">
       <ColoredTitle
         title="GANADORES DE PREMIOS ALTOS"
         color="#038E24"

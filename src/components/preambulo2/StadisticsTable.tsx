@@ -5,12 +5,14 @@ import { GalgosNumbers } from "../../shared";
 import arrowIcon from "../../assets/img/arrow-icon.png";
 
 const racesData = [
-  [8.29, 37.66, 93.21, 30.48, 115.58, 151.41],
-  [19.24, 3.65, 114.15, 37.41, 142.71, 188.63],
-  [31.33, 61.46, 8.33, 52.99, 162.21, 215.49],
-  [18.14, 43.97, 110.6, 4.1, 137.37, 181.24],
-  [35.95, 67.25, 135.85, 58.62, 5.19, 221.55],
-  [42.74, 78.32, 147.74, 68.76, 176.22, 3.74],
+  [8.29, 37.66, 93.21, 30.48, 115.58, 151.41, 109.32, 80.43],
+  [19.24, 3.65, 114.15, 37.41, 142.71, 188.63, 77.24, 73.41],
+  [31.33, 61.46, 8.33, 52.99, 162.21, 215.49, 43.12, 25.99],
+  [18.14, 43.97, 110.6, 4.1, 137.37, 181.24, 62.8, 1.4],
+  [35.95, 67.25, 135.85, 58.62, 5.19, 221.55, 34.21, 58.62],
+  [42.74, 78.32, 147.74, 68.76, 176.22, 3.74, 16.14, 68.76],
+  [37.33, 23.65, 141.15, 28.37, 37.63, 22.71, 31.74, 28.37],
+  [34.33, 24.74, 16.46, 9.15, 68.76, 42.71, 53.9, 1.95],
 ];
 
 export const StadisticsTable = () => {
@@ -20,13 +22,13 @@ export const StadisticsTable = () => {
     .slice(0, 3);
 
   return (
-    <div className="relative w-full h-full row-span-4 col-span-4 bg-[#5D87A2] rounded-br-4xl rounded-tl-4xl shadow-table-components px-8 py-4">
+    <div className="relative w-full h-full row-span-9 col-span-4 bg-[#5D87A2] rounded-br-4xl rounded-tl-4xl shadow-table-components px-8 py-4">
       <div className="relative w-full h-full ps-10 pt-10 bg-[#0F3762] rounded-br-4xl rounded-tl-4xl">
-        <div className="absolute top-[2rem] left-[4.5rem]">
+        <div className="absolute top-[2rem] left-[4rem]">
           <p className="text-white text-sm leading-1.5 uppercase italic">2do</p>
           <img width={40} src={arrowIcon} alt="Flecha" />
         </div>
-        <div className="absolute top-[3.6rem] left-7">
+        <div className="absolute top-[3.6rem] left-6">
           <p className="text-white text-sm leading-0 uppercase italic">1er</p>
           <img
             width={40}
@@ -40,7 +42,7 @@ export const StadisticsTable = () => {
             Llega en 2do lugar
           </h2>
         </header>
-        <header className="absolute text-white bottom-44 -left-[5.5rem] -rotate-90">
+        <header className="absolute text-white top-80 -left-[5.6rem] -rotate-90">
           <h2 className="text-2xl uppercase font-bold -skew-x-12">
             Llega en 1er lugar
           </h2>

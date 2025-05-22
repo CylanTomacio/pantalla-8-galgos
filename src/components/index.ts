@@ -4,8 +4,5 @@ export * from "./Preambulo1";
 export * from "./Preambulo2";
 export * from "./Results";
 export * from "./preambulo1/BetTable";
-export * from "./preambulo1/HighPrizeWinnersTable";
-export * from "./preambulo1/LatestResults";
-export * from "./preambulo2/JackpotWinners";
 export * from "./preambulo2/StadisticsCells";
 export * from "./preambulo2/StadisticsTable";

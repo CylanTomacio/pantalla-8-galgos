@@ -2,7 +2,7 @@ import locationIcon from "../assets/img/location-icon.png";
 
 export const AdSidebar = () => {
   return (
-    <aside className="w-full h-full row-span-6 bg-[#001F6D] rounded-2xl shadow-ad-sidebar text-white flex flex-col items-center gap-y-16 py-16">
+    <aside className="w-full h-full row-span-12 bg-[#001F6D] rounded-2xl shadow-ad-sidebar text-white flex flex-col items-center gap-y-16 py-16">
       <header className="flex flex-col items-center justify-center w-full text-center gap-y-4">
         <img
           className="drop-shadow-[-14px_2px_3px_rgba(0,0,0,.41)]"

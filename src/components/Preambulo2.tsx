@@ -1,5 +1,5 @@
-import { AdSidebar, PredictionTable, RacePreview } from "../shared";
-import { JackpotWinners } from "./preambulo2/JackpotWinners";
+import { AdSidebar, LatestRaceResults, RacePreview } from "../shared";
+import { HighPrizeWinnersTable } from "../shared/HighPrizeWinnersTable";
 import { StadisticsTable } from "./preambulo2/StadisticsTable";
 
 export const Preambulo2 = () => {
@@ -8,8 +8,8 @@ export const Preambulo2 = () => {
       <StadisticsTable />
       <RacePreview />
       <AdSidebar />
-      <JackpotWinners />
-      <PredictionTable />
+      <LatestRaceResults />
+      <HighPrizeWinnersTable />
     </>
   );
 };

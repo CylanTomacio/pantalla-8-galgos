@@ -14,7 +14,7 @@ export const ColoredTitle = ({
   return (
     <header
       style={{ backgroundColor: color }}
-      className={`absolute drop-shadow-sm drop-shadow-gray-950/50 skew-x-[40deg] left-14 pe-4 ${className}`}
+      className={`absolute drop-shadow-sm drop-shadow-gray-950/50 skew-x-[40deg] left-8 pe-4 ${className}`}
     >
       <div
         style={{ backgroundColor: color }}
