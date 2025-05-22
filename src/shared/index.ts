@@ -5,3 +5,4 @@ export * from "./GalgoLoadingBar";
 export * from "./GalgosNumbers";
 export * from "./Header";
 export * from "./PredictionTable";
+export * from "./RacePreview";

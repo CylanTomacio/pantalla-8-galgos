@@ -4,7 +4,7 @@ import { GalgosNumbers } from "./GalgosNumbers";
 
 export const PredictionTable = () => {
   return (
-    <div className="relative w-full h-full row-span-2 col-span-4 bg-[#5D87A2] rounded-2xl shadow-table-components px-8 py-4">
+    <div className="relative w-full h-full row-span-3 col-span-4 bg-[#5D87A2] rounded-2xl shadow-table-components px-8 py-4">
       <ColoredTitle
         title="Predicción"
         color="#E06920"
@@ -22,18 +22,6 @@ export const PredictionTable = () => {
         <div className="flex items-center gap-x-1 w-full">
           <GalgosNumbers className="w-8 h-8 text-3xl" galgoNumber={3} />
           <GalgoLoadingBar galgoNumber={3} position="55" />
-        </div>
-        <div className="flex items-center gap-x-1 w-full">
-          <GalgosNumbers className="w-8 h-8 text-3xl" galgoNumber={4} />
-          <GalgoLoadingBar galgoNumber={4} position="0" />
-        </div>
-        <div className="flex items-center gap-x-1 w-full">
-          <GalgosNumbers className="w-8 h-8 text-3xl" galgoNumber={5} />
-          <GalgoLoadingBar galgoNumber={5} position="75" />
-        </div>
-        <div className="flex items-center gap-x-1 w-full">
-          <GalgosNumbers className="w-8 h-8 text-3xl" galgoNumber={6} />
-          <GalgoLoadingBar galgoNumber={6} position="90" />
         </div>
       </div>
     </div>

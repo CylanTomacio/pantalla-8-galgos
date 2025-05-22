@@ -8,6 +8,8 @@
   --drop-shadow-header: 0px 4px 0px rgba(0, 0, 0, 0.41);
   --shadow-ad-sidebar: -12px 2px 2px rgba(0, 0, 0, 0.35);
   --shadow-table-components: 0 4px 2px rgba(0, 0, 0, 0.3);
+  --radius-5xl: 2.5rem;
+  --radius-6xl: 3rem;
 
   --font-myriad: "Myriad", "sans-serif";
 }
@@ -19,25 +21,9 @@
   }
   .galgo-1 {
     background-color: #be0001;
-    color: white;
+    color: #fff;
   }
   .galgo-2 {
-    background-color: #0000bc;
-    color: white;
-  }
-  .galgo-3 {
-    background-color: #ffffff;
-    color: black;
-  }
-  .galgo-4 {
-    background-color: #000000;
-    color: white;
-  }
-  .galgo-5 {
-    background-color: #e06920;
-    color: black;
-  }
-  .galgo-6 {
     background: repeating-linear-gradient(
       to bottom,
       #ffffff 0px,
@@ -51,11 +37,35 @@
       #ffffff 20px
     );
     color: #be0001;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px #fff;
+  }
+  .galgo-3 {
+    background-color: #ffffff;
+    color: #000;
+  }
+  .galgo-4 {
+    background-color: #1b68d2;
+    color: #fff;
+  }
+  .galgo-5 {
+    background-color: #efdd06;
+    color: #1e1901;
+  }
+  .galgo-6 {
+    background-color: #559b17;
+    color: #fe0020;
+  }
+  .galgo-7 {
+    background-color: #1a1a1a;
+    color: #ffca00;
+  }
+  .galgo-8 {
+    background-color: #e116a4;
+    color: #000;
   }
 }
 
-.number-galgo-6 {
+.number-galgo-2 {
   background-image: url("./assets/img/bg-galgo-6.png");
   background-repeat: no-repeat;
   background-size: cover;

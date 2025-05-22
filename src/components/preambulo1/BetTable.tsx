@@ -2,71 +2,82 @@ import { GalgosNumbers } from "../../shared";
 
 const dogsData = [
   {
-    position: "1",
-    dog: "Barnside Belie",
-    streak: "63134",
-    odds: "1.62¹",
-    bet: "21,030.00",
+    position: 1,
+    dog: "Rose Bordeaux",
+    streak: 36232,
+    odds: 2.25,
+    bet: 21030.0,
   },
   {
-    position: "2",
-    dog: "Knotmor Patsy",
-    streak: "42431",
-    odds: "2.25²",
-    bet: "94,600.00",
+    position: 2,
+    dog: "Brenton Barnacle",
+    streak: "f131",
+    odds: 2.5,
+    bet: 94600.0,
   },
   {
-    position: "3",
-    dog: "Yankee Vixen",
-    streak: "T5351",
-    odds: "5.00³",
-    bet: "6,850.00",
+    position: 3,
+    dog: "Simply Simon",
+    streak: 21628,
+    odds: 3.0,
+    bet: 6850.0,
   },
   {
-    position: "4",
-    dog: "Takeiteasykitty",
-    streak: "33222",
-    odds: "R",
-    bet: "0",
+    position: 4,
+    dog: "Freeway Mick",
+    streak: 23371,
+    odds: 6.0,
+    bet: 3765.0,
   },
   {
-    position: "5",
-    dog: "Deakon Zuky",
-    streak: "34253",
-    odds: "8.00",
-    bet: "54,345.00",
+    position: 5,
+    dog: "Vacante",
+    streak: null,
+    odds: null,
+    bet: 0,
   },
   {
-    position: "6",
-    dog: "Iluminating",
-    streak: "42643",
-    odds: "9.00",
-    bet: "110,300.00",
+    position: 6,
+    dog: "Our Casey",
+    streak: 17782,
+    odds: 9.0,
+    bet: 110300.0,
+  },
+  {
+    position: 7,
+    dog: "It's Gold",
+    streak: 61851,
+    odds: 33.0,
+    bet: 9760.0,
+  },
+  {
+    position: 8,
+    dog: "Harrita's Due In",
+    streak: 32111,
+    odds: 17.0,
+    bet: 12300.0,
   },
 ];
 
 export const BetTable = () => {
   return (
-    <div className="relative w-full h-full row-span-4 col-span-4 bg-[#5D87A2] rounded-tl-[4rem] rounded-br-[4rem] shadow-table-components px-8 pt-8 pb-4 z-20">
-      <header className="absolute grid grid-cols-20 w-[90%] h-13 top-8 text-white text-3xl text-center ps-12 pe-6 -z-10">
-        <div className="relative bg-[#0F3762] skew-x-[40deg] py-2 me-2 text-center col-span-7">
-          <div className="absolute bg-[#0F3762] h-full w-20 -skew-x-[40deg] bottom-0 -left-12 rounded-l-full"></div>
-        </div>
-        <div className="bg-[#0F3762] skew-x-[40deg] py-2 me-2 col-span-4"></div>
-        <div className="bg-[#0F3762] skew-x-[40deg] py-2 me-2 col-span-4"></div>
-        <div className="relative bg-[#0F3762] skew-x-[40deg] ps-4 py-2 me-2 col-span-5">
-          <div className="absolute bg-[#0F3762] h-full w-20 -skew-x-[40deg] top-0 -right-12 rounded-r-full flex flex-col overflow-hidden"></div>
-        </div>
-      </header>
+    <div className="relative w-full h-full row-span-5 col-span-4 bg-[#5D87A2] rounded-tl-[4rem] rounded-br-[4rem] shadow-table-components px-8 py-2 z-20">
       <table className="w-full h-full text-white table-auto border-separate border-spacing-y-1 text-center z-50">
         <thead className="text-4xl">
           <tr>
-            <td colSpan={2} className="pb-2">
+            <td
+              colSpan={2}
+              className="bg-[#0F3762] py-3 border-e-4 border-[#5D87A2] rounded-l-full"
+            >
               Galgo
             </td>
-            <td className="pb-2">Racha</td>
-            <td className="pb-2">Cuota</td>
-            <td className="pb-2">Apostado</td>
+            <td className="bg-[#0F3762] py-3 border-e-4 border-[#5D87A2]">
+              Racha
+            </td>
+            <td className="bg-[#0F3762] py-3 border-e-4 border-[#5D87A2]">
+              Cuota
+            </td>
+            <td className="bg-[#0F3762] py-3 rounded-r-full">Apostado</td>
           </tr>
         </thead>
         <tbody className="text-2xl">

@@ -4,11 +4,13 @@ import thirdPlaceIcon from "../assets/img/third-place-icon.png";
 
 const galgoColor = [
   "galgo-1",
-  "galgo-2",
+  "number-galgo-2",
   "galgo-3",
   "galgo-4",
   "galgo-5",
-  "number-galgo-6",
+  "galgo-6",
+  "galgo-7",
+  "galgo-8",
 ];
 
 type Props = {

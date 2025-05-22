@@ -34,7 +34,7 @@ export const Preambulo = ({ setVideoEnded, setShowPreambulo }: Props) => {
   }, [setVideoEnded, setShowPreambulo]);
 
   return (
-    <section className="w-full h-full grid grid-cols-9 grid-rows-6 px-12 py-36 gap-x-4 gap-y-6">
+    <section className="w-full h-full grid grid-cols-9 grid-rows-5 px-12 py-36 gap-x-4 gap-y-4">
       {!changePreambulo ? <Preambulo1 /> : <Preambulo2 />}
     </section>
   );
