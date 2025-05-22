@@ -16,6 +16,7 @@ const galgoColor = [
 type Props = {
   galgoNumber: number;
   className?: string;
+  positionSize?: string;
   firstPlace?: boolean;
   secondPlace?: boolean;
   thirdPlace?: boolean;
@@ -24,6 +25,7 @@ type Props = {
 export const GalgosNumbers = ({
   galgoNumber,
   className,
+  positionSize,
   firstPlace,
   secondPlace,
   thirdPlace,
@@ -35,13 +37,28 @@ export const GalgosNumbers = ({
       } relative flex justify-center items-center rounded text-black font-bold text-center ${className}`}
     >
       {firstPlace && (
-        <img className="absolute -top-5 -left-5" src={firstPlaceIcon} />
+        <img
+          className={`absolute ${
+            positionSize === "small" ? "-top-1 -left-3 w-7" : "-top-5 -left-5"
+          }`}
+          src={firstPlaceIcon}
+        />
       )}
       {secondPlace && (
-        <img className="absolute -top-5 -left-5" src={secondPlaceIcon} />
+        <img
+          className={`absolute ${
+            positionSize === "small" ? "-top-1 -left-3 w-7" : "-top-5 -left-5"
+          }`}
+          src={secondPlaceIcon}
+        />
       )}
       {thirdPlace && (
-        <img className="absolute -top-5 -left-5" src={thirdPlaceIcon} />
+        <img
+          className={`absolute ${
+            positionSize === "small" ? "-top-1 -left-3 w-7" : "-top-5 -left-5"
+          }`}
+          src={thirdPlaceIcon}
+        />
       )}
       <p>{String(galgoNumber)}</p>
     </div>
