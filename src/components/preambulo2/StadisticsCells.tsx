@@ -32,6 +32,7 @@ export const StadisticsCells = ({
       >
         {starredTimes.includes(data) && ( //The latest 3 minimun times shows a star over them
           <img
+            width={18}
             className="absolute top-1 right-1"
             src={starIcon}
             alt="Estrella"
